@@ -1,13 +1,215 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  overflow-x: hidden;
+
+}
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5FBDFF; 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b {
+  font-family: 'Hedvig Letters Serif', serif;
+  overflow-y: hidden;
+}
+
+/*blue colour=  #5FBDFF */
+/* #d9e9f6 */
+
+#firstRow {
+  background-color: #ffffff;
+  width: 100%;
+  height: 90vh;
+}
+
+#secondRow {
+  background-color: #d9e9f6;
+  width: 100%;
+  height: 70vh;
+}
+
+#thirdRow {
+  background-color: #ffffff;
+  height: fit-content;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.Button {
+  background-color: #5FBDFF;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+
+}
+
+.Button:hover {
+  transform: scale(0.9);
+  transition: ease-in-out 1ms;
+}
+
+#sliding-text:hover {
+  position: relative;
+  animation-name: sliders;
+  animation-duration: 4s;
+
+}
+
+@keyframes sliders {
+  0% {
+    right: -200px;
+    top: 0px;
+  }
+
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+#sliding-right {
+  position: relative;
+  animation-name: slide;
+  animation-duration: 4s;
+  text-align: justify;
+}
+
+@keyframes slide {
+
+  0% {
+    left: -200px;
+    top: 0px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+
+}
+
+#card:hover {
+  transform: scale(0.9);
+  transition: ease-in-out 1ms;
+}
+
+.Button {
+  background-color: #5FBDFF;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+}
+
+.Button:hover {
+  transform: scale(0.9);
+  transition: ease-in-out 1ms;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #5FBDFF;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#logText {
+  position: relative;
+  animation-name: slider;
+  animation-duration: 4s;
+
+}
+
+@keyframes slider {
+
+  0% {
+    left: -200px;
+    top: 0px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+
+}
+
+#logPage {
+  width: 50%;
+  margin-left: 8%;
+  position: relative;
+  animation-name: slide;
+  animation-duration: 4s;
+}
+
+@keyframes slide {
+
+  0% {
+    left: 0px;
+    top: 800px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+
 }

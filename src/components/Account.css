@@ -1,0 +1,19 @@
+#profile-top {
+    height: fit-content;
+    width: 100%;
+    border: 1px solid #ced5da;
+}
+
+#profile-bottom {
+    height: 75vh;
+    width: 100%;
+    border: 1px solid #ced5da;
+}
+#post-image{
+    overflow: hidden;
+}
+#post-image:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 5ms;
+
+}
